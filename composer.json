@@ -1,0 +1,53 @@
+{
+  "name": "yahyakng/omnipay-zibal",
+  "type": "library",
+  "description": "Zibal driver for the Omnipay PHP payment processing library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yahya Kangi",
+      "email": "yhy.kng@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "omnipay",
+    "zibal",
+    "gateway",
+    "merchant",
+    "payment",
+    "purchase",
+    "dargah"
+  ],
+  "homepage": "https://github.com/yahyakng/omnipay-zibal",
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\Zibal\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Omnipay\\Zibal\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "ext-json": "*",
+    "omnipay/common": "^3.0"
+  },
+  "require-dev": {
+    "omnipay/tests": "^3.1",
+    "squizlabs/php_codesniffer": "^3.4",
+    "phpunit/phpunit": "^6.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "phpcs"
+  }
+}
